@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog</title>
+    <link rel="stylesheet" href="/styles/doginfo.css" />
+  </head>
+  <body class="bg">
+    <nav>
+      <h1>DAWG</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Sign In</a></li>
+        <li><a href="/Register">Register</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+
+    <div class="dog-profile">
+      <div class="dog-image">
+        <img src="/images/goofy1.png" alt="Dog Image" />
+      </div>
+      <div class="dog-info">
+        <h1><%= dog1.name %></h1>
+        <h3><%= dog1.breed %></h3>
+        <h4><%= dog1._id %></h4>
+        <p>Age: <%= dog1.age %> years old</p>
+        <p>Gender: <%= dog1.gender %></p>
+        <p>Weight: <%= dog1.weight %> kgs</p>
+        <p>Color: <%= dog1.color %></p>
+        <p>Temperament: Friendly, Energetic, Obedient</p>
+        <p>Description: <%= dog1.description %>.</p>
+        <p>Available on: Wednesdays and Fridays</p>
+        <button type="button">Reserve Me</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col2">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col3">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <!-- Add any other content you want to display here -->
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

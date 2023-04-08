@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAWG</title>
+    <link rel="stylesheet" href="/styles/new.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>DAWG</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Sign in</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+    <div class="registration-form">
+      <form action="/register" method="POST">
+        <h2>Create an account</h2>
+        <div class="form-group">
+          <input type="email" id="email" name="customer[email]" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <input type="text" id="name" name="customer[name]" required />
+          <label for="name">Username</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="address"
+            id="address"
+            name="customer[address]"
+            required
+          />
+          <label for="address">Address</label>
+        </div>
+        <div class="form-group">
+          <input type="city" id="city" name="customer[city]" required />
+          <label for="city">City</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="provience"
+            id="provience"
+            name="customer[provience]"
+            required
+          />
+          <label for="provience">Provience</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="country"
+            id="country"
+            name="customer[country]"
+            required
+          />
+          <label for="country">Country</label>
+        </div>
+        <div class="form-group">
+          <input type="bcid" id="bcid" name="customer[BCId]" required />
+          <label for="bcid">BCID No</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            name="customer[password]"
+            required
+          />
+          <label for="password">Password</label>
+        </div>
+        <div class="form-group">
+          <label for="user-type">Register as:</label><br />
+          <select type="text" id="user-type" name="type" required>
+            <option>Select User Type</option>
+            <option value="owner">Owner</option>
+            <option value="customer">Customer</option>
+          </select>
+        </div>
+        <button type="submit">Register</button>
+        <center>
+          <p class="hello">
+            <a href="/login">Already have an account? Sign in</a>
+          </p>
+        </center>
+      </form>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col2">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col3">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <!-- Add any other content you want to display here -->
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

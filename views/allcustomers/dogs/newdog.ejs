@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add your Dog</title>
+    <link rel="stylesheet" href="/styles/newdog.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>DAWG</h1>
+      <ul>
+        <li><a href="dog.html">Home</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="Register.html">Register</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+    <div class="bg">
+      <div class="form-container">
+        <h2>Listing your Dog</h2>
+        <form action="/dogs" method="POST">
+          <div class="form-group">
+            <label for="dog-name">Dog's Name</label>
+            <input type="text" id="dog-name" name="dog[name]" required />
+          </div>
+          <div class="form-group">
+            <label for="dog-breed">Breed</label>
+            <input type="text" id="dog-breed" name="dog[breed]" required />
+          </div>
+          <div class="form-group">
+            <label for="dog-color">Color</label>
+            <input type="text" id="dog-color" name="dog[color]" required />
+          </div>
+          <div class="form-group">
+            <label for="dog-gender">Gender</label>
+            <select id="dog-gender" name="dog[gender]" required>
+              <option value="" disabled selected>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dog-age">Age</label>
+            <input
+              type="number"
+              id="dog-age"
+              name="dog[age]"
+              min="1"
+              max="20"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="dog-weight">Weight (in kgs)</label>
+            <input
+              type="number"
+              id="dog-weight"
+              name="dog[weight]"
+              min="1"
+              max="100"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="dog-height">Height (in cms)</label>
+            <input
+              type="number"
+              id="dog-height"
+              name="dog[height]"
+              min="10"
+              max="200"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="dog-description"
+              >Description (include Veterinary details)</label
+            >
+            <textarea
+              id="dog-description"
+              name="dog[description]"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="is-available">Is this Dog Available</label>
+            <select id="is-available" name="dog[available]" required>
+              <option value="" disabled selected>Select option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <!-- <div class="form-group">
+      <label for="dog-image">Upload Documents(image,health care, etc.)</label>
+      <input type="file" id="dog-image" name="dogImage" accept="image/*" required>
+    </div> -->
+          <center>
+            <button type="submit" class="submit-button">List Dog</button>
+          </center>
+        </form>
+      </div>
+
+      <br /><br /><br />
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col2">
+            <h4>Social</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col3">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Reviews</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <!-- Add any other content you want to display here -->
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

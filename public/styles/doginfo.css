@@ -1,0 +1,339 @@
+nav {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: -10px;
+}
+nav h1 {
+  color: purple;
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+nav li {
+  margin: 0 30px;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+nav a:hover {
+  color: #ddd;
+  background-color: black;
+}
+.bg {
+  background-image: url("/images/image4.jpg");
+
+  background-size: cover; /* set the background size to contain */
+  background-repeat: no-repeat; /* disable repeating of the image */
+  background-position: center center; /* center the image in the container */
+}
+h2,
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  /* or 77px */
+
+  text-align: center;
+
+  color: #6c0ea5;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h3 {
+  font-family: "Ledger";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+
+  text-align: center;
+  color: #809200;
+}
+h4 {
+  font-family: "Ledger";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+
+  text-align: center;
+}
+button {
+  background-color: purple;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 7px 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #86970c;
+}
+h5 {
+  font-family: "Potta One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #86970c;
+}
+h6 {
+  font-family: "Ledger";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 45px;
+  text-align: center;
+
+  color: #141413;
+}
+.list {
+  background-image: url("/images/bgbg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  border-radius: 50%;
+  height: 200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover h2 {
+  color: #007bff;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover p {
+  color: #555;
+}
+
+.card button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.card button:hover {
+  background-color: #0062cc;
+  opacity: 1;
+}
+.h7 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  /* or 77px */
+
+  text-align: center;
+
+  color: #6c0ea5;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer {
+  background-color: #c386f2;
+  padding: 40px 0;
+}
+
+footer h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #222;
+}
+.col1 {
+  width: 178.67px;
+  height: 116px;
+}
+.col2 {
+  width: 178.67px;
+  height: 58px;
+}
+.col3 {
+  width: 178.67px;
+  height: 87px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.dog-profile {
+  margin: 20px auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dog-profile img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
+
+/* Style for the dog profile name */
+.dog-profile h2 {
+  margin-top: 0;
+  font-size: 32px;
+  text-align: center;
+  color: #333;
+}
+
+/* Style for the dog profile description */
+.dog-profile p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #666;
+}
+
+/* Style for the dog profile details */
+.dog-profile dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for the dog profile details labels */
+.dog-profile dt {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for the dog profile details values */
+.dog-profile dd {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Style for the dog profile rent button */
+.dog-profile button {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #86970c;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Style for the dog profile rent button on hover */
+.dog-profile button:hover {
+  background-color: purple;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .dog-profile {
+    width: 90%;
+  }
+}
